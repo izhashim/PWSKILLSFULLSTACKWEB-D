@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+video, audio {
+    max-width: 100%;
+    height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="media-gallery">
+        <div class="media">
+            <audio controls autoplay loop>
+                <source src="audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div class="media">
+            <video controls autoplay loop>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!--Vedio wasn't responding that is why its without Audio and Vedio-->
+    </div>
+</body>
+</html>
