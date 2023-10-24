@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circular Image</title>
+    <style>
+        /* Center the image container on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Style the image container */
+.image-container {
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Hide the overflow if the image is larger than the container */
+    width: 200px; /* Set the container's width */
+    height: 200px; /* Set the container's height */
+}
+
+/* Style the image within the container */
+img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Scale and crop the image to fit the container */
+}
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://www.upshottechnologies.in/images/course/full-stack-developer-training-course.jpg" alt="Circular Image">
+    </div>
+</body>
+</html>
