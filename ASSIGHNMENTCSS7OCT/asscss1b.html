@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: -10px;/* Negative margin to counteract the padding */
+        }
+
+        .image {
+            flex: 0 0 calc(33.33% - 20px); /* Three images in a row */
+            margin: 10px;/* Add space between images*/
+        }
+
+        /* Media query for screens smaller than 800px */
+        @media screen and (max-width: 800px) {
+            .image {
+                flex: 0 0 calc(50% - 20px);/* Two images in a row*/
+            }
+        }
+
+        /* Media query for screens smaller than 500px */
+        @media screen and (max-width: 500px) {
+            .image {
+                flex: 0 0 calc(100% - 20px);/* One image in a row*/
+            }
+        }
+
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <div class="image">
+            <img src="https://fastly.picsum.photos/id/1075/200/300.jpg?hmac=pffU5_mFDClpUhsTVng81yHXXvdsGGKHi1jCz2pRsaU" alt="Image 1">
+        </div>
+        <div class="image">
+            <img src="https://fastly.picsum.photos/id/1075/200/300.jpg?hmac=pffU5_mFDClpUhsTVng81yHXXvdsGGKHi1jCz2pRsaU" alt="Image 2">
+        </div>
+        <div class="image">
+            <img src="https://fastly.picsum.photos/id/1075/200/300.jpg?hmac=pffU5_mFDClpUhsTVng81yHXXvdsGGKHi1jCz2pRsaU" alt="Image 3">
+        </div>
+    </div>
+</body>
+</html>
