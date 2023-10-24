@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Form</title>
+    <style>
+        /* Custom color palette */
+        :root {
+            --main-background: #f2f2f2;
+            --form-background: #fff;
+            --input-background: #e6e6e6;
+            --button-background: #007bff;
+            --button-text: #fff;
+        }
+
+        /* Apply opacity to one form section */
+        .section-with-opacity {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Style the form container */
+        .form-container {
+            background-color: var(--main-background);
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        /* Style the form elements */
+        form {
+            background-color: var(--form-background);
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Style input fields */
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: var(--input-background);
+        }
+
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: var(--button-background);
+            color: var(--button-text);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h2>Login Form</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <div class="section-with-opacity">
+                <h3>Additional Information</h3>
+                <input type="email" placeholder="Email">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
