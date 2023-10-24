@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS - Affects all divs with class="box" */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- External CSS - Affects all divs with class="box" -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <div class="box" style="background-color: lightcoral;"> <!-- Inline CSS - Overrides external and internal styles -->
+        Inline CSS
+    </div>
+
+    <div class="box">
+        Internal CSS
+    </div>
+
+    <div class="box">
+        External CSS
+    </div>
+</body>
+</html>
