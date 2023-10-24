@@ -1,0 +1,55 @@
+<!-- `z-index` is a CSS property that controls the stacking order of HTML elements on a web page. It is used to determine which elements should appear in front of or behind other elements when they overlap in the z-axis (perpendicular to the screen). 
+
+The `z-index` property takes an integer value, and elements with higher `z-index` values will appear in front of elements with lower values. By default, all elements have a `z-index` of 0.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#box1 {
+    top: 50px;
+    left: 50px;
+    z-index: 1; /* Box 1 has the highest z-index */
+}
+
+#box2 {
+    top: 100px;
+    left: 100px;
+    z-index: 0; /* Default z-index (0) */
+}
+
+#box3 {
+    top: 150px;
+    left: 150px;
+    z-index: -1; /* Box 3 has the lowest z-index */
+}
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+    <div class="box" id="box3">Box 3</div>
+</body>
+</html>
+
+
+
