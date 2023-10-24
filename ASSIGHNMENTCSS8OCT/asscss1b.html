@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers with Text</title>
+    <style>
+        .container {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #333;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            margin: 10px;
+        }
+
+        .container:nth-child(odd) {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .container:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        .container-text {
+            font-weight: bold;
+        }
+
+        .container-label {
+            font-size: 16px;
+        }
+
+        .container-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="container">
+            <div class="container-text">A</div>
+            <div class="container-label">Container A</div>
+        </div>
+        <div class="container">
+            <div class="container-text">B</div>
+            <div class="container-label">Container B</div>
+        </div>
+        <div class="container">
+            <div class="container-text">C</div>
+            <div class="container-label">Container C</div>
+        </div>
+        <div class="container">
+            <div class="container-text">D</div>
+            <div class="container-label">Container D</div>
+        </div>
+    </div>
+</body>
+</html>
