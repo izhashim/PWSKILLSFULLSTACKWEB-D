@@ -1,0 +1,12 @@
+The .gitignore file is a configuration file used in Git to specify files and directories that should be ignored by the version control system. It allows developers to exclude specific files or patterns from being tracked by Git, preventing them from being included in commits and ultimately in the Git repository.
+
+Usage.
+
+1.Create a .gitignore File:
+In the root directory of your Git repository, create a file named .gitignore. This file can be plain text and should be committed to the repository.
+
+2.Specify Patterns:
+Inside the .gitignore file, you can specify files, directories, or patterns of files that you want Git to ignore.
+
+3.Commit the .gitignore File:
+ After creating or modifying the .gitignore file, make sure to commit it to the repository. This ensures that all contributors to the project share the same    ignore rules.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <!-- Include the Tailwind CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Add inline styles for Gmail clone -->
+    <style>
+        /* Add your inline styles here */
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+    <!-- Gmail Container -->
+    <div class="max-w-screen-lg mx-auto p-4">
+
+        <!-- Gmail Header -->
+        <header class="flex items-center justify-between bg-white p-4 shadow-md">
+            <!-- Your Gmail Header Content Goes Here -->
+            <div class="flex items-center space-x-4">
+                <img src="https://www.gstatic.com/images/branding/product/2x/gmail_48dp.png" alt="Gmail Logo" class="w-8 h-8">
+                <h1 class="text-xl font-bold">Gmail</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <!-- Your User Profile and Settings Go Here -->
+                <img src="https://via.placeholder.com/32" alt="User Profile" class="w-8 h-8 rounded-full">
+                <button class="text-blue-500">Sign Out</button>
+            </div>
+        </header>
+
+        <!-- Gmail Main Content -->
+        <main class="flex bg-white mt-4 rounded-md overflow-hidden">
+
+            <!-- Gmail Sidebar -->
+            <aside class="w-1/4 bg-gray-100 p-4">
+                <!-- Gmail Sidebar Content Goes Here -->
+                <ul>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-500 hover:underline">Inbox</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-gray-600 hover:underline">Sent</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-gray-600 hover:underline">Archived</a>
+                    </li>
+                    <!-- Add more sidebar links as needed -->
+                </ul>
+            </aside>
+
+            <!-- Gmail Emails -->
+            <div class="flex-1 p-4">
+                <!-- Your Gmail Emails Content Goes Here -->
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" class="mr-2">
+                    <p class="font-bold">Email Subject</p>
+                    <span class="text-gray-500 ml-auto">2h ago</span>
+                </div>
+                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <!-- Add more emails as needed -->
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
